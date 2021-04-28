@@ -1,0 +1,354 @@
+/* ------------------------ */
+/* Basic Setup */
+/* ------------------------ */
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color : #555555;
+    font-family: 'Lato', 'Arial' , sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------ */
+/* Reusable Components*/
+/* ------------------------ */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+section {
+    padding: 80px 0 80px 0;
+}
+
+.icon-music {
+    display: block;
+    font-size: 200%;
+    color: rgba(60, 103, 144, 0.7);
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ------------------------ */
+/* Headings*/
+/* ------------------------ */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 200%;
+    word-spacing: 3px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    text-align: center;
+}
+.names {
+    color: #555555;
+    font-size: 80%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(60, 103, 144, 0.7);
+    content: " ";
+    width: 200px;
+    margin: 0 auto 0 auto;
+    margin-top: 30px;
+}
+
+/* ------------------------ */
+/* Header */
+/* ------------------------ */
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("img/delta.jpg");
+    height: 100vh;
+    background-size: cover ;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*.logo {*/
+/*    height: 100px;*/
+/*    width: auto;*/
+/*    float: left;*/
+/*}*/
+
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgba(60, 103, 144, 0.7);
+}
+
+/* ------------------------ */
+/* Paragraph */
+/* ------------------------ */
+
+.lyric {
+    padding: 1%;
+}
+
+.lyrics {
+    text-align: center;
+    font-size: 90%;
+    line-height: 160%;
+
+}
+
+/* ------------------------ */
+/* Img Section */
+/* ------------------------ */
+
+.section-photos{
+    padding: 0;
+}
+
+.img-lst {
+    list-style: none;
+    width:100%;
+}
+
+.img-lst li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+    transform: scale(1.15);
+    transition: transform 0.3s, opacity 0.5s;
+    opacity: 0.7;
+}
+
+.photo img:hover {
+    width: 100%;
+    height: 300px;
+    transform: scale(1.80);
+    opacity: 1;
+}
+
+/* ------------------------ */
+/* Locations Section */
+/* ------------------------ */
+
+.loc img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    background-color: black;
+    border-radius: 1%;
+}
+
+.loc img:hover {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 1;
+    background-color: black;
+    transition: opacity 0.5s;
+    border-radius: 1%;
+}
+
+.section-cities {
+    margin-bottom: 5px;
+
+}
+
+.loc ul {
+    list-style: none;
+}
+
+.loc li {
+    margin-bottom: 8px;
+}
+
+.row-cities {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    display: block;
+    margin-bottom: 550px;
+}
+
+.loc-icon {
+    color: rgba(60, 103, 144, 0.7);
+    font-size: 200%;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ------------------------ */
+/* Buttons */
+/* ------------------------ */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(171, 196, 220, 0.7);
+}
+
+.btn-delta:link,
+.btn-delta:visited {
+    background-color: rgba(40, 68, 96, 0.7);
+}
+
+.btn-delta:hover,
+.btn-delta:active {
+    background-color: rgba(171, 196, 220, 0.7);
+}
+
+.btn-babel:link,
+.btn-babel:visited {
+    background-color: rgba(60, 103, 144, 0.7);
+}
+
+.btn-babel:hover,
+.btn-babel:active {
+    background-color: rgba(171, 196, 220, 0.7);
+}
+
+/* ------------------------ */
+/* Buttons */
+/* ------------------------ */
+
+footer {
+    background-color: rgba(1, 32, 62, 0.7); 
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-nav li,
+.social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:visited,
+.footer-nav li a:link,
+.social li a:visited,
+.social li a:link {
+    text-decoration: none;
+    border: 0;
+    color: rgba(171, 196, 220, 0.7);
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: azure;
+}
+
+.social li a:hover,
+.social li a:active {
+    color: azure;
+}
+
+.social {
+    list-style: none;
+    float: right;
+}
+
+footer p {
+    text-align: center;
+    color: rgba(171, 196, 220, 0.7);
+    font-size: 60%;
+    line-height: 15px;
+}
